@@ -1,0 +1,8 @@
+'default': 'general'
+general:
+    driver: 'postgres'
+    database: 'pwtutorial'
+    user: 'postgres'
+    password: '12345'
+    host: 'localhost'
+    prefix: ''
