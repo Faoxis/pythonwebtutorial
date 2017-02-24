@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Стартовая страница</title>
+    </head>
+
+    <body>
+        <h1>Это наша стартовая страница</h1>
+        <hr>
+
+        <div>
+            <h3>Добавить новую задачу</h3>
+            <form action="/" method="post">
+                Название задачи: <input type="text" name="name" placeholder="Название задачи"><br>
+                <input type="submit" value="Добавить!">
+            </form>
+        </div>
+
+        <div>
+            <ul> Список задач:
+                {% for task in tasks %}
+                    <li>{{ task.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </body>
+</html>
